@@ -1,12 +1,17 @@
+import java.util.concurrent.TimeUnit;
+
 // Image.java
-public class Image {
-    private String imageUrl;
-
-    public Image(String imageUrl) {
-        this.imageUrl = imageUrl;
+class Image {
+    private String imageName;
+    public Image(String name) {
+        imageName = name;
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
-
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImageName() {
+        return imageName;
     }
 }

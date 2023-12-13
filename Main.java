@@ -12,7 +12,6 @@ public class Main {
         subChapter1.addParagraph("This is a sub-chapter.");
         subChapter1.addImage("image1.jpg");
         subChapter1.addTable("Table data goes here.");
-
         chapter1.addSubChapter(subChapter1);
 
         myBook.addChapter(chapter1);
@@ -20,5 +19,8 @@ public class Main {
         BookPrinter.printAuthors(myBook.getAuthors());
         BookPrinter.printChapters(myBook.getChapters());
         BookPrinter.printSubChapter(subChapter1);
+
     }
 }
+
+
