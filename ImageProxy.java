@@ -14,6 +14,7 @@ public class ImageProxy implements Image {
     }
 }
 
+
 class ConcreteImage implements Image {
     private String imageName;
 
